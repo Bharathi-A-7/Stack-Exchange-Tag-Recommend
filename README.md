@@ -2,7 +2,7 @@
 
 Link to the working app : https://stack-ex-tag-app.herokuapp.com/ 
 
-The app allows you to query any of Stack Exchange(Data Science) 's tags and it will return a list of related tags as recommendations . 
+This app allows you to query any of Stack Exchange(Data Science) 's tags and it will return a list of related tags as recommendations . 
 
 A weighted graph of different tags is built using the 'networkx' library . The vertices are the tags and the edge weights indicate the number of times two connected tags appear together in various questions . 
 
