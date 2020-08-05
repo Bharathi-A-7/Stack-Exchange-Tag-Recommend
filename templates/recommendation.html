@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+{% endblock %}
+
+{% block head %}
+<title>Posts</title> 
+<style type="text/css">
+body {
+    font-family: sans-serif;
+	background-color: rgba(255,160,122,0.4);
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container1 {width:960px;
+      margin:0 auto;
+      padding:10px 25px;
+      border:9px solid #CD5C5C;
+      background: rgba(255,160,122,0.4); }
+#rounded {
+            border-radius: 25px;
+            background: rgba(128,0,0,0.9);
+            padding: 20px;
+            width: 100px;
+            height: 100px;
+         }
+.container2 {width:900px;
+      margin:0 auto;
+      padding:10px 25px;
+      border:9px solid #CD5C5C;
+      background: rgba(255,160,122,0.4); }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class ="container1" style="text-align:center" >
+<h1> Related Tags </h1>
+		<div class ="container2" width="150">
+        <h3>{{ neighbours_result }}<h3>
+		</div>
+</div>
+{% endblock %}
